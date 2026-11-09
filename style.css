@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+   *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    color: rgb(59, 57, 57);
+    background-color: rgb(247, 247, 252);
+}
+
+.main{
+     width: 100%;
+    height: 100vh;
+    color: rgb(35, 32, 32);
+    background-color: rgb(228, 228, 234);
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.heading a{
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(25, 113, 72);
+    font-size: 15px;
+   
+}
+
+.keep-up{
+font-size: 20px;
+font-weight:bold;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+padding-bottom: 8px;
+ padding-top: 4px;
+}
+
+.intro{
+    font-size: 8px;
+    font-weight:100;
+    color:rgb(100, 96, 96);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.section_1{
+background-color: whitesmoke;
+border-radius: 30px;
+width: 360px;
+height: auto;
+}
+
+.sec-cont{
+    padding: 30px;
+}
+
+form h3{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+input[type]{
+    padding: 9px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    width: 300px;
+    height: 40px;
+    font-size: 12px;
+    background-color:rgb(210, 225, 220);
+
+}
+
+.login_btn{
+     padding: 9px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    background-color:rgb(25, 113, 72);
+}
+
+.login_btn a{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+span a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.createbtn{
+      padding: 9px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    background-color:rgb(210, 225, 220);
+
+}
+.createbtn a{
+    text-align: center;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
