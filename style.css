@@ -141,3 +141,8 @@ span a{
     font-size: 11px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+img{
+    width: 70px;
+    height: 70px;
+}
