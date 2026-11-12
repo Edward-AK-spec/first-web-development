@@ -11,7 +11,6 @@ function login_btn(e){
 
     if(userEmail === emailId && securePassword === passWord){
         errorSms = document.getElementById("displayMsg").innerHTML = `Sucessfully Login`;
-        errorSms.style.color="green";
     } 
     else if(userEmail ===""){
         errorSms = document.getElementById("displayMsg").innerHTML = `Please enter your email`;
@@ -27,7 +26,6 @@ function login_btn(e){
     
     else {
         errorSms = document.getElementById("displayMsg").innerHTML =`Please carefully enter your credential`;
-        errorSms.style.color ="green";
         console.log("Enter your creditial carefully");
     }
 

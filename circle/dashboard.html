@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle |Dashboard</title>
+      <link rel="icon" type="image/webp" href="circle.webp">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main">
+      
+        <div class="heading">
+            <nav>
+                <h3><a href="#">Circle</a></h3>
+               
+            </nav>
+             
+            <h2 class="keep-up">Keep up with the<br> People who matter.</h2>
+
+            <p class="intro"> 
+                Share what you are up to, follow friends
+                and family, and<br> keep conversations going in one place.
+            </p>
+        </div>
+        <form action="" method="POST" autocomplete="on" onsubmit="login_btn(event)">
+            <div class="section_1">
+                <div class="sec-cont">
+                <h3>Login in to Circle</h3>
+
+                <div class="errorMsg" id="displayMsg"></div>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="User@gmail.com" autocomplete="email"><br><br>
+
+                <label for="userPass">Password</label><br>
+                <input type="password" id="userPass" placeholder="............" autocomplete="current-password"><br><br>
+
+                <button class="login_btn" type="submit">Log in</button><br><br>
+
+                <span><a href="#">Forget password</a></span><br><br>
+
+                <hr><br>
+                <button class="createbtn" type="button" onclick="create_account()">Create a new account</button><br><br>
+               
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
