@@ -31,12 +31,9 @@ function login_btn(e){
         console.log("Enter your creditial carefully");
     }
 
-
-    sessionStorage.setItem("Logged In", "true");
-    setInterval(() => {     
-        window.location.replace("dashboard.html");
-    },1000 );
-
+if(sessionStorage.getItem("LoggedIn") !== "true" ){
+    window.location.replace("index.js");
+}
 
 }
 
