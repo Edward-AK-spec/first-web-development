@@ -73,7 +73,14 @@ form h3{
     font-size: 15px;
     font-family:Arial, Helvetica, sans-serif;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.errorMsg{
+    padding: 5px;
+    color: red;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 label{
@@ -102,9 +109,6 @@ input[type]{
     width: 300px;
     height: 40px;
     background-color:rgb(25, 113, 72);
-}
-
-.login_btn a{
     color: white;
     font-size: 13px;
     font-weight: bold;
