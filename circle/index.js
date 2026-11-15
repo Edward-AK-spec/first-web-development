@@ -4,42 +4,44 @@ function login_btn(e){
 
    const userEmail = document.getElementById("email").value.trim();
     const passWord = document.getElementById("userPass").value;
+    let createAcc = document.getElementById("signUp");
 
-    let emailId ="test@gmail.com";
-    let securePassword = "1234";
-    let errorSms;
+    const emailId ="test@gmail.com";
+    const securePassword = "1234";
+    let alertBox;
 
     if(userEmail === emailId && securePassword === passWord){
-        errorSms = document.getElementById("displayMsg").innerHTML = `Sucessfully Login`;
+        sessionStorage.setItem("loggedin", "true");
+        setTimeout( ()=> {
+            window.location.replace("dashboard.html");
+             alertBox = document.getElementById("displayMsg").textContent = `Sucessfully Login`;
+            return;
+        }, 1000 )
+         alertBox.style.color ="green";
     } 
     else if(userEmail ===""){
-        errorSms = document.getElementById("displayMsg").innerHTML = `Please enter your email`;
+        alertBox = document.getElementById("displayMsg").textContent = `Please enter your email`;
+        return;
     }
 
     else if(userEmail === "." ){
-        errorSms = document.getElementById("displayMsg").innerHTML = `Please check you email`;
+        alertBox = document.getElementById("displayMsg").textContent = `Please check you email`;
+        return;
     }
     else if(passWord === ""){
-        errorSms = document.getElementById("displayMsg").innerHTML = `Please enter your password`;
+        alertBox = document.getElementById("displayMsg").textContent = `Please enter your password`;
     }
     
     
     else {
-        errorSms = document.getElementById("displayMsg").innerHTML =`Please carefully enter your credential`;
-        console.log("Enter your creditial carefully");
+        alertBox = document.getElementById("displayMsg").textContent =`Please carefully enter your credential`;
     }
 
 
-    sessionStorage.setItem("Logged In", "true");
-    setInterval(() => {     
-        window.location.replace("dashboard.html");
-    },1000 );
+    createAcc.addEventListener("click", () => {
+        window.location.replace("sign_up.html");
+    })
 
 
 }
 
-function create_account(e){
-    console.log("hello developer");
-
-    
-}
