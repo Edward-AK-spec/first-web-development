@@ -2,7 +2,7 @@
 function login_btn(e){
     e.preventDefault();
 
-   const userEmail = document.getElementById("email").value.trim();
+   const userEmail = document.getElementById("email").value.trim().toLowerCase();
     const passWord = document.getElementById("userPass").value;
     let createAcc = document.getElementById("signUp");
 
@@ -12,12 +12,12 @@ function login_btn(e){
 
     if(userEmail === emailId && securePassword === passWord){
         sessionStorage.setItem("loggedin", "true");
+        alertBox = document.getElementById("displayMsg").style.color ="green";
         setTimeout( ()=> {
             window.location.replace("dashboard.html");
              alertBox = document.getElementById("displayMsg").textContent = `Sucessfully Login`;
             return;
         }, 1000 )
-         alertBox.style.color ="green";
     } 
     else if(userEmail ===""){
         alertBox = document.getElementById("displayMsg").textContent = `Please enter your email`;
