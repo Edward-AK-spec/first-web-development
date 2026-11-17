@@ -4,7 +4,7 @@ function login_btn(e){
 
    const userEmail = document.getElementById("email").value.trim().toLowerCase();
     const passWord = document.getElementById("userPass").value;
-    let createAcc = document.getElementById("signUp");
+    //let createAcc = document.getElementById("signUp");
 
     const emailId ="test@gmail.com";
     const securePassword = "1234";
@@ -36,12 +36,16 @@ function login_btn(e){
     else {
         alertBox = document.getElementById("displayMsg").textContent =`Please carefully enter your credential`;
     }
-
-
-    createAcc.addEventListener("click", () => {
-        window.location.replace("sign_up.html");
-    })
+    //createAcc.addEventListener("click", () => {
+      //  window.location.href="sign_up.html";
+   // })
 
 
 }
 
+
+  document.getElementById("signUp").addEventListener("click", ()=> {
+    setTimeout( ()=>{
+        window.location.href="sign_up.html";
+    },1000);
+    });

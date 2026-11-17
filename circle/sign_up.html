@@ -24,7 +24,29 @@
                 and family, and<br> keep conversations going in one place.
             </p>
         </div>
-      <h3>Sign UP</h3>
+        <form action="" method="POST" autocomplete="on">
+            <div class="section_1">
+                <div class="sec-cont">
+                <h3>Create an account</h3>
+
+                <div class="errorMsg" id="displayMsg"></div>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="User@gmail.com" autocomplete="email"><br><br>
+
+                <label for="userPass">Password</label><br>
+                <input type="password" id="userPass" placeholder="............" autocomplete="current-password"><br><br>
+
+                <button class="login_btn" id="login" type="button">Log in</button><br><br>
+
+                <span><a href="#">Forget password</a></span><br><br>
+
+                <hr><br>
+                <button class="createbtn" type="button" id="signUp">Create a new account</button><br><br>
+               
+                </div>
+            </div>
+        </form>
 
     </div>
     <script src="sign_up.js"></script>

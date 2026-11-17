@@ -1,45 +1,10 @@
 
-function login_btn(e){
-    e.preventDefault();
+document.getElementById("signUp").addEventListener("click", ()=> {
+    setTimeout( () => {
+        window.location.href ="sign_up.html";
+    },1000);
+});
 
-   const userEmail = document.getElementById("email").value.trim();
-    const passWord = document.getElementById("userPass").value;
-
-    let emailId ="test@gmail.com";
-    let securePassword = "1234";
-    let errorSms;
-
-    if(userEmail === emailId && securePassword === passWord){
-        errorSms = document.getElementById("displayMsg").innerHTML = `Sucessfully Login`;
-    } 
-    else if(userEmail ===""){
-        errorSms = document.getElementById("displayMsg").innerHTML = `Please enter your email`;
-    }
-
-    else if(userEmail === "." ){
-        errorSms = document.getElementById("displayMsg").innerHTML = `Please check you email`;
-    }
-    else if(passWord === ""){
-        errorSms = document.getElementById("displayMsg").innerHTML = `Please enter your password`;
-    }
-    
-    
-    else {
-        errorSms = document.getElementById("displayMsg").innerHTML =`Please carefully enter your credential`;
-        console.log("Enter your creditial carefully");
-    }
-
-
-    sessionStorage.setItem("Logged In", "true");
-    setInterval(() => {     
-        window.location.replace("dashboard.html");
-    },1000 );
-
-
-}
-
-function create_account(e){
-    console.log("hello developer");
-
-    
-}
+document.getElementById("login").addEventListener("click", () => {
+    window.location.href ="login.html";
+});
