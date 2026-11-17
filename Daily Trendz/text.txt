@@ -1,0 +1,94 @@
+var backBtn = document.querySelector(".back-btn");
+ window.addEventListener("scroll",
+    function(){
+        if (this.pageYOffset > 100){
+
+            backBtn.classList.add("active");
+        } else {
+  
+    backBtn.classList.remove("active");
+   }
+});
+
+backBtn.addEventListener("click",
+    function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    })
+
+
+openBtn.addEventListener("click", function(){
+    menuList.classList.add("active");
+});
+
+
+closeBtn.addEventListener("click", function(){
+    menuList.classList.remove("active");
+});
+
+
+
+        
+
+
+const menuList = document.getElementById("menuList");
+const openBtn = document.getElementById("hamburgerIcon");
+const closeBtn = document.getElementById("closeIcon");
+
+openBtn.onclick = function(){
+    menuList.style.display = "block";
+    menuList.style.behavior = 'smooth';
+}
+
+closeBtn.onclick = function(){
+    menuList.style.display="none";
+    menuList.style.behavior = 'smooth';
+}
+
+
+var backBtn = document.querySelector(".backbtn");
+
+
+ window.addEventListener("scroll",
+    function(){
+        if (this.pageYOffset > 100){
+
+            backBtn.classList.add("active");
+        } else {
+  
+    backBtn.classList.remove("active");
+   }
+});
+
+.backbtn-container{
+    position: static;
+    text-align: center;
+    background: rgb(34, 33, 33);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    margin-left: 895px;
+    margin-top: -30px;
+}
+
+.backbtn{
+    cursor: pointer;
+    padding: 0px;
+    color: rgb(235, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+let submitBtn = document.getElementById('click', ()=>{
+   
+});
+
+   let userName;
+    userName = document.getElementById("userName").value;
+    document.getElementById("displayMessage").textContent=`Hello ${userName} your message has been successfully receive.`;
